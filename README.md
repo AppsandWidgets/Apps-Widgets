@@ -1,4 +1,4 @@
-# Ludo-Apps
+# Apps and Widgets
 
 APPS:
 
