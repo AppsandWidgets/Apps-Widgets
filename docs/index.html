@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0e14" />
+  <meta name="description" content="UImods — Apps & Widgets. Download the latest Current Weather and Weather Visual Widget APKs." />
+  <title>UImods — Apps & Widgets</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <main class="shell">
+    <header class="hero">
+      <div class="brand-mark" aria-hidden="true">UI</div>
+      <div>
+        <p class="eyebrow">UImods</p>
+        <h1>Apps &amp; Widgets</h1>
+        <p class="lede">Clean Android utilities and widgets. Downloads below always point to the current APK assets in the <strong>Apps</strong> GitHub Release.</p>
+      </div>
+    </header>
+
+    <section class="status-bar" aria-live="polite">
+      <span class="dot"></span>
+      <span id="sync-status">Checking latest release…</span>
+      <button id="refresh-button" type="button">Refresh</button>
+    </section>
+
+    <section class="grid" aria-label="Apps and widgets">
+      <article class="card">
+        <div class="icon weather" aria-hidden="true">☀</div>
+        <div class="card-copy">
+          <p class="kind">APP + WIDGETS</p>
+          <h2>Current Weather</h2>
+          <p id="current-meta" class="meta">Latest release asset</p>
+          <p class="description">Current conditions, detailed weather cards, wind information, dynamic messages and more.</p>
+        </div>
+        <a id="current-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/CurrentWeather.apk">Download APK</a>
+      </article>
+
+      <article class="card">
+        <div class="icon visual" aria-hidden="true">☁</div>
+        <div class="card-copy">
+          <p class="kind">WEATHER WIDGET</p>
+          <h2>Weather Visual Widget</h2>
+          <p id="visual-meta" class="meta">Latest release asset</p>
+          <p class="description">Dynamic visual weather widget with live conditions and day/night behavior.</p>
+        </div>
+        <a id="visual-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/WeatherVisualsWidget.apk">Download APK</a>
+      </article>
+    </section>
+
+    <section class="release-card">
+      <div>
+        <p class="kind">GITHUB RELEASE</p>
+        <h2>Latest versions</h2>
+        <p id="release-meta" class="meta">Release tag: Apps</p>
+      </div>
+      <a class="button secondary" href="https://github.com/UImods/AppsWidgets/releases/tag/Apps">Open GitHub Releases</a>
+    </section>
+
+    <footer>
+      <span>UImods — Apps &amp; Widgets</span>
+      <span>Downloads served by GitHub Releases</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
