@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0e14" />
-  <meta name="description" content="UImods — Apps & Widgets. Download the latest Current Weather and Weather Visual Widget APKs." />
+  <meta name="description" content="UImods — Apps & Widgets. Download the latest Android and KWGT APKs from the Apps GitHub Release." />
   <title>UImods — Apps & Widgets</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -12,43 +12,120 @@
   <div class="ambient ambient-a"></div>
   <div class="ambient ambient-b"></div>
   <main class="shell">
+    <img class="hero-banner" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/00-android-applications-banner.jpg" alt="Android Applications" />
+
     <header class="hero">
       <div class="brand-mark" aria-hidden="true">UI</div>
       <div>
         <p class="eyebrow">UImods</p>
         <h1>Apps &amp; Widgets</h1>
-        <p class="lede">Clean Android utilities and widgets. Downloads below always point to the current APK assets in the <strong>Apps</strong> GitHub Release.</p>
+        <p class="lede">Clean Android utilities and widgets. Downloads automatically track the current APK assets in the <strong>Apps</strong> GitHub Release.</p>
       </div>
     </header>
 
     <section class="status-bar" aria-live="polite">
       <span class="dot"></span>
       <span id="sync-status">Checking latest release…</span>
-      <button id="refresh-button" type="button">Refresh</button>
     </section>
 
-    <section class="grid" aria-label="Apps and widgets">
-      <article class="card">
-        <div class="icon weather" aria-hidden="true">☀</div>
-        <div class="card-copy">
-          <p class="kind">APP + WIDGETS</p>
-          <h2>Current Weather</h2>
-          <p id="current-meta" class="meta">Latest release asset</p>
-          <p class="description">Current conditions, detailed weather cards, wind information, dynamic messages and more.</p>
-        </div>
-        <a id="current-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/CurrentWeather.apk">Download APK</a>
-      </article>
+    <section class="section-block" aria-labelledby="weather-apps-title">
+      <div class="section-heading">
+        <p class="eyebrow">Android applications</p>
+        <h2 id="weather-apps-title">Weather apps</h2>
+      </div>
 
-      <article class="card">
-        <div class="icon visual" aria-hidden="true">☁</div>
-        <div class="card-copy">
-          <p class="kind">WEATHER WIDGET</p>
-          <h2>Weather Visual Widget</h2>
-          <p id="visual-meta" class="meta">Latest release asset</p>
-          <p class="description">Dynamic visual weather widget with live conditions and day/night behavior.</p>
-        </div>
-        <a id="visual-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/WeatherVisualsWidget.apk">Download APK</a>
-      </article>
+      <div class="grid">
+        <article class="card">
+          <div class="icon weather" aria-hidden="true">☀</div>
+          <div class="card-copy">
+            <p class="kind">APP + WIDGETS</p>
+            <h3>Current Weather</h3>
+            <p id="current-meta" class="meta">Latest release asset</p>
+            <p class="description">Current conditions, detailed weather cards, wind information, dynamic messages and more.</p>
+          </div>
+          <a id="current-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/CurrentWeather.apk">Download APK</a>
+        </article>
+
+        <article class="card">
+          <div class="icon visual" aria-hidden="true">☁</div>
+          <div class="card-copy">
+            <p class="kind">WEATHER WIDGET</p>
+            <h3>Weather Visual Widget</h3>
+            <p id="visual-meta" class="meta">Latest release asset</p>
+            <p class="description">Dynamic visual weather widget with live conditions and day/night behavior.</p>
+          </div>
+          <a id="visual-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/WeatherVisualsWidget.apk">Download APK</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block showcase" aria-labelledby="weather-previews-title">
+      <div class="section-heading">
+        <p class="eyebrow">Gallery</p>
+        <h2 id="weather-previews-title">Weather previews</h2>
+      </div>
+      <div class="gallery-grid">
+        <figure><img loading="lazy" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/01-current-weather-home-widget-user-new-york.png" alt="Current Weather home widget preview" /></figure>
+        <figure><img loading="lazy" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/02-current-weather-condition-icon-user-new-york.png" alt="Current Weather condition icon preview" /></figure>
+        <figure><img loading="lazy" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/03-current-weather-wind-detailed-new-york.png" alt="Current Weather wind and detailed weather preview" /></figure>
+        <figure><img loading="lazy" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/04-current-weather-app-new-york.png" alt="Current Weather app preview" /></figure>
+        <figure class="wide"><img loading="lazy" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/05-weather-visual-widget-preview.jpg" alt="Weather Visual Widget preview" /></figure>
+      </div>
+    </section>
+
+    <img class="section-banner" src="https://raw.githubusercontent.com/UImods/AppsWidgets/main/release-images/06-kwgt-widgets-banner.jpg" alt="KWGT Widgets" />
+
+    <section class="section-block" aria-labelledby="kwgt-apps-title">
+      <div class="section-heading">
+        <p class="eyebrow">KWGT widget packages</p>
+        <h2 id="kwgt-apps-title">Music &amp; other widgets</h2>
+      </div>
+
+      <div class="grid">
+        <article class="card compact">
+          <div class="icon music" aria-hidden="true">♫</div>
+          <div class="card-copy">
+            <p class="kind">KWGT WIDGET</p>
+            <h3>SoundCloud Player</h3>
+            <p id="soundcloud-meta" class="meta">Latest release asset</p>
+            <p class="description">KWGT SoundCloud player widget package.</p>
+          </div>
+          <a id="soundcloud-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/KWGT-SoundCloudPlayer.apk">Download APK</a>
+        </article>
+
+        <article class="card compact">
+          <div class="icon retro" aria-hidden="true">▣</div>
+          <div class="card-copy">
+            <p class="kind">KWGT WIDGET</p>
+            <h3>Retro Player</h3>
+            <p id="retro-meta" class="meta">Latest release asset</p>
+            <p class="description">KWGT retro-style music player widget package.</p>
+          </div>
+          <a id="retro-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/KWGTRetroPlayer.apk">Download APK</a>
+        </article>
+
+        <article class="card compact">
+          <div class="icon widgets" aria-hidden="true">◆</div>
+          <div class="card-copy">
+            <p class="kind">KWGT WIDGETS</p>
+            <h3>Other Widgets</h3>
+            <p id="other-meta" class="meta">Latest release asset</p>
+            <p class="description">A collection of additional KWGT widgets.</p>
+          </div>
+          <a id="other-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/Other%20Widgets.apk">Download APK</a>
+        </article>
+
+        <article class="card compact">
+          <div class="icon vinyl" aria-hidden="true">●</div>
+          <div class="card-copy">
+            <p class="kind">KWGT WIDGET</p>
+            <h3>Vinyl Retro Player</h3>
+            <p id="vinyl-meta" class="meta">Latest release asset</p>
+            <p class="description">KWGT vinyl-inspired retro music player widget package.</p>
+          </div>
+          <a id="vinyl-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/VinylRetroPlayer.apk">Download APK</a>
+        </article>
+      </div>
     </section>
 
     <section class="release-card">
