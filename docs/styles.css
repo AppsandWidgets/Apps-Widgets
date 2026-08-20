@@ -51,7 +51,13 @@ h3 { margin: 0; font-size: 25px; letter-spacing: -.025em; }
 .card, .release-card { border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.028)); box-shadow: var(--shadow); backdrop-filter: blur(16px); }
 .card { min-height: 330px; border-radius: 26px; padding: 24px; display: flex; flex-direction: column; }
 .card.compact { min-height: 300px; }
-.icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 17px; font-size: 27px; margin-bottom: 28px; border: 1px solid rgba(255,255,255,.1); }
+.card-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(138px, 44%); align-items: start; gap: 18px; margin-bottom: 22px; }
+.card-identity { min-width: 0; display: flex; align-items: flex-start; gap: 14px; }
+.card-identity > div:last-child { min-width: 0; padding-top: 4px; }
+.card-identity h3 { font-size: clamp(20px, 2.6vw, 25px); }
+.card-preview { min-width: 0; aspect-ratio: 3 / 2; overflow: hidden; border: 1px solid rgba(255,255,255,.13); border-radius: 16px; background: rgba(255,255,255,.04); box-shadow: 0 12px 30px rgba(0,0,0,.32), 0 0 24px rgba(138,180,255,.09); }
+.card-preview img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.icon { width: 54px; height: 54px; display: grid; place-items: center; border-radius: 17px; font-size: 27px; border: 1px solid rgba(255,255,255,.1); flex: 0 0 auto; }
 .icon.weather { background: linear-gradient(145deg, rgba(255,196,83,.22), rgba(125,158,255,.12)); }
 .icon.visual { background: linear-gradient(145deg, rgba(118,174,255,.22), rgba(160,119,255,.14)); }
 .icon.dynamic { background: linear-gradient(145deg, rgba(255,190,91,.20), rgba(91,143,255,.18)); }
@@ -105,4 +111,9 @@ footer { display: flex; justify-content: space-between; gap: 18px; padding: 28px
   .legal-content { margin: 0 12px 12px; padding: 18px; }
   .release-card { align-items: stretch; flex-direction: column; }
   footer { flex-direction: column; gap: 5px; }
+}
+@media (max-width: 520px) {
+  .card-top { grid-template-columns: 1fr; }
+  .card-preview { width: 100%; max-height: 230px; }
+  .card-identity h3 { font-size: 23px; }
 }
