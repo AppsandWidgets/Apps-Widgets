@@ -18,6 +18,12 @@ const APPS = [
     fallback: `https://github.com/${OWNER}/${REPO}/releases/download/${TAG}/WeatherVisualsWidget.apk`,
   },
   {
+    key: "dynamic",
+    friendly: "Dynamic Walls",
+    aliases: ["dynamicwalls"],
+    fallback: `https://github.com/${OWNER}/${REPO}/releases/download/${TAG}/DynamicWalls.apk`,
+  },
+  {
     key: "soundcloud",
     friendly: "KWGT SoundCloud Player",
     aliases: ["kwgtsoundcloudplayer", "soundcloudplayer"],

@@ -7,10 +7,11 @@ https://uimods.github.io/AppsWidgets/
 
 The website displays the same banner and preview images already stored in the repository under `release-images/` and reads the existing public GitHub release with tag `Apps`.
 
-It automatically finds and updates download links for these six APKs:
+It automatically finds and updates download links for these seven APKs:
 
 - CurrentWeather.apk
 - WeatherVisualsWidget.apk
+- DynamicWalls.apk
 - KWGT-SoundCloudPlayer.apk
 - KWGTRetroPlayer.apk
 - Other Widgets.apk
