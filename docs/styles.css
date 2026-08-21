@@ -96,6 +96,20 @@ h3 { margin: 0; font-size: 25px; letter-spacing: -.025em; }
 .legal-content p { margin: 0; color: #b8c0cc; font-size: 13px; line-height: 1.62; }
 .release-card { margin-top: 32px; border-radius: 24px; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 footer { display: flex; justify-content: space-between; gap: 18px; padding: 28px 4px 0; color: #8e99a3; font-size: 12px; }
+.password-modal { width: min(460px, calc(100% - 28px)); padding: 0; border: 1px solid rgba(255,255,255,.14); border-radius: 24px; color: var(--text); background: rgba(13, 16, 24, .97); box-shadow: 0 30px 100px rgba(0,0,0,.65), 0 0 45px rgba(138,180,255,.12); }
+.password-modal::backdrop { background: rgba(2, 4, 9, .78); backdrop-filter: blur(8px); }
+.password-modal-card { padding: 28px; }
+.password-modal-heading { margin-bottom: 22px; }
+.password-modal-heading h2 { margin-bottom: 8px; }
+.password-modal-heading p:last-child { margin: 0; color: var(--muted); }
+.password-field-label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 13px; font-weight: 700; }
+.password-field-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; }
+.password-field-row input { min-width: 0; height: 50px; padding: 0 14px; border: 1px solid rgba(255,255,255,.13); border-radius: 14px; outline: none; color: var(--text); background: rgba(255,255,255,.055); font: inherit; }
+.password-field-row input:focus { border-color: rgba(138,180,255,.65); box-shadow: 0 0 0 3px rgba(138,180,255,.12); }
+.password-toggle { min-width: 70px; border: 1px solid var(--line); border-radius: 14px; color: var(--text); background: rgba(255,255,255,.07); font: inherit; font-weight: 700; cursor: pointer; }
+.password-error { min-height: 20px; margin: 9px 0 5px; color: #ff9ca8; font-size: 13px; font-weight: 700; }
+.password-modal-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+.password-modal-actions .button { border: 0; cursor: pointer; font: inherit; }
 @media (max-width: 720px) {
   .shell { width: min(100% - 22px, 980px); padding-top: 20px; }
   .hero-banner { border-radius: 20px; margin-bottom: 24px; }
@@ -116,4 +130,6 @@ footer { display: flex; justify-content: space-between; gap: 18px; padding: 28px
   .card-top { grid-template-columns: 1fr; }
   .card-preview { width: 100%; max-height: 230px; }
   .card-identity h3 { font-size: 23px; }
+  .password-modal-card { padding: 22px; }
+  .password-modal-actions { grid-template-columns: 1fr; }
 }

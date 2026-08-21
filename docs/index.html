@@ -126,7 +126,7 @@
             <p id="soundcloud-meta" class="meta">Latest release asset</p>
             <p class="description">KWGT SoundCloud player widget package.</p>
           </div>
-          <a id="soundcloud-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/KWGT-SoundCloudPlayer.apk">Download APK</a>
+          <a id="soundcloud-download" class="button primary protected-download" href="#" data-app-name="SoundCloud Player" data-download-url="https://github.com/UImods/AppsWidgets/releases/download/Apps/KWGT-SoundCloudPlayer-Protected.zip" aria-haspopup="dialog">Download APK</a>
         </article>
 
         <article class="card compact">
@@ -141,7 +141,7 @@
             <p id="retro-meta" class="meta">Latest release asset</p>
             <p class="description">KWGT retro-style music player widget package.</p>
           </div>
-          <a id="retro-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/KWGTRetroPlayer.apk">Download APK</a>
+          <a id="retro-download" class="button primary protected-download" href="#" data-app-name="Retro Player" data-download-url="https://github.com/UImods/AppsWidgets/releases/download/Apps/KWGTRetroPlayer-Protected.zip" aria-haspopup="dialog">Download APK</a>
         </article>
 
         <article class="card compact">
@@ -156,7 +156,7 @@
             <p id="other-meta" class="meta">Latest release asset</p>
             <p class="description">A collection of additional KWGT widgets.</p>
           </div>
-          <a id="other-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/Other%20Widgets.apk">Download APK</a>
+          <a id="other-download" class="button primary protected-download" href="#" data-app-name="Other Widgets" data-download-url="https://github.com/UImods/AppsWidgets/releases/download/Apps/Other-Widgets-Protected.zip" aria-haspopup="dialog">Download APK</a>
         </article>
 
         <article class="card compact">
@@ -171,7 +171,7 @@
             <p id="vinyl-meta" class="meta">Latest release asset</p>
             <p class="description">KWGT vinyl-inspired retro music player widget package.</p>
           </div>
-          <a id="vinyl-download" class="button primary" href="https://github.com/UImods/AppsWidgets/releases/download/Apps/VinylRetroPlayer.apk">Download APK</a>
+          <a id="vinyl-download" class="button primary protected-download" href="#" data-app-name="Vinyl Retro Player" data-download-url="https://github.com/UImods/AppsWidgets/releases/download/Apps/VinylRetroPlayer-Protected.zip" aria-haspopup="dialog">Download APK</a>
         </article>
       </div>
     </section>
@@ -221,6 +221,26 @@
       <span>UImods — Apps &amp; Widgets</span>
     </footer>
   </main>
+
+  <dialog id="protected-download-modal" class="password-modal" aria-labelledby="protected-modal-title" aria-describedby="protected-modal-description">
+    <form id="protected-download-form" class="password-modal-card">
+      <div class="password-modal-heading">
+        <p class="eyebrow">Protected Download</p>
+        <h2 id="protected-modal-title">Protected app</h2>
+        <p id="protected-modal-description">Enter password to continue.</p>
+      </div>
+      <label class="password-field-label" for="protected-password">Password</label>
+      <div class="password-field-row">
+        <input id="protected-password" name="password" type="password" autocomplete="off" required />
+        <button id="toggle-protected-password" class="password-toggle" type="button" aria-pressed="false">Show</button>
+      </div>
+      <p id="protected-password-error" class="password-error" role="alert" aria-live="polite"></p>
+      <div class="password-modal-actions">
+        <button id="cancel-protected-download" class="button secondary" type="button">Cancel</button>
+        <button class="button primary" type="submit">Unlock / Download</button>
+      </div>
+    </form>
+  </dialog>
   <script src="app.js"></script>
 </body>
 </html>
